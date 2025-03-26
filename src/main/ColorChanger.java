@@ -2,10 +2,9 @@ package main;
 
 import javax.swing.*;
 import java.awt.*;
-//import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class UI {
+public class ColorChanger {
 
     PaintPanel pp;
     ButtonPanel bp;
@@ -17,7 +16,7 @@ public class UI {
 
 
     //constructor
-    public UI(ButtonPanel bp , PaintPanel pp) {
+    public ColorChanger(ButtonPanel bp , PaintPanel pp) {
         this.bp = bp;
         this.pp = pp;
 
@@ -41,7 +40,7 @@ public class UI {
         button.setContentAreaFilled(false); // keine gefüllte Hintergrundfläche
         button.setFocusPainted(true); // Entfernt den Fokus-Rahmen
         button.setBounds(25, 50, 200, 40);
-        button.setText("COLOR >");
+        button.setText("COLOR");
         button.setFocusable(false);
         button.setHorizontalTextPosition(JButton.CENTER);
         button.setBackground(Color.gray);
@@ -66,7 +65,7 @@ public class UI {
     // method
     public void colorWindow() {
 
-        colorWindow.setBounds(25, 100, 200, 150);
+        colorWindow.setBounds(25, 100, 200, 40);
         colorWindow.setLayout(new GridLayout(2, 3));
         colorWindow.setBackground(Color.black);
         colorWindow.setFont(new Font("Arial", Font.BOLD, 16));

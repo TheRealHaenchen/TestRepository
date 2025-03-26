@@ -13,13 +13,18 @@ public class MouseHandler implements MouseListener, MouseMotionListener {
     PaintPanel pp;
     public int x, y;
     public Color color;
-    public static final int STROKE_SIZE = 10;
+    public int STROKE_SIZE;
 
     public ArrayList<ColorPoint> currentPath;
 
     public void setColor(Color c) {
         this.color = c;
     }
+
+    public void setSTROKE_SIZE(int size) {
+        this.STROKE_SIZE = size;
+    }
+
 
 
     // create constructor and receive PaintPanel
